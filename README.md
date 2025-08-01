@@ -3,16 +3,21 @@ This will be my own personal project on the spotify database from kaggle. This n
 to explore, analyze, and create models using the spotify playlist.
 
 
-TECHNIQUES:
-* info
-* describe
-* shape
+
+# SPOTIFY
+* why are there more unique track ids then track names do some tracks have more than 1 id?
+
+# MODEL IDEAS
+* predict how long a user will play a song 
+* predict whether or not a user will skip a song
+* make a song reccomender
+
+
+# TECHNIQUES:
 * df.duplicated().sum()
 *df[].nunique()
 * df[].value_counts()
 * df[].isnull().sum()
-* df[].dropna()
-* df[['col1', 'col2']]
 * df.select_dtype(include=['int64'])
 * df[df['col1']==0]
 * plt.hist(df['col'], bins=df['col'].nunique())
@@ -137,3 +142,11 @@ dataframe naming conventions:
 # git stuff
 git rm --cached *.csv
 git commit -m "Stop tracking CSV files"*.csv
+
+
+# fun facts
+when running code in ipynbs, you have to refer to the files from where the notebook is actually 
+located.
+
+however, if I am just runnign a normal python file through terminal, then I just refer to where 
+files are relative to where I am in the terminal
